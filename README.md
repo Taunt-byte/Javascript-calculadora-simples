@@ -1,11 +1,12 @@
 # Calculadora
 
 Este projeto é uma calculadora desenvolvida em JavaScript, criada com o objetivo de aprimorar as habilidades de programação nessa linguagem.
-Tecnologias Utilizadas
 
-    HTML 5.*
-    CSS 3.*
-    JavaScript 5.*
+## Tecnologias Utilizadas
+
+- HTML 5.*
+- CSS 3.*
+- JavaScript 5.*
 
 ## Funcionalidades
 
