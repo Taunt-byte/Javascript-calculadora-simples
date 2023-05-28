@@ -1,47 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-    <div id="titulo">
-        <h1>Calculadora em JavaScript</h1>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="titulo">
+      <h1>Calculadora em javascript</h1>
+    </header>
+
+    <div class="calculator">
+      <input type="text" id="result" readonly />
+
+      <div>
+        <input
+          type="button"
+          class="button"
+          value="1"
+          onclick="appendValue(1)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="2"
+          onclick="appendValue(2)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="3"
+          onclick="appendValue(3)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="+"
+          onclick="appendValue('+')"
+        />
+      </div>
+
+      <div>
+        <input
+          type="button"
+          class="button"
+          value="4"
+          onclick="appendValue(4)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="5"
+          onclick="appendValue(5)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="6"
+          onclick="appendValue(6)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="-"
+          onclick="appendValue('-')"
+        />
+      </div>
+
+      <div>
+        <input
+          type="button"
+          class="button"
+          value="7"
+          onclick="appendValue(7)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="8"
+          onclick="appendValue(8)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="9"
+          onclick="appendValue(9)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="*"
+          onclick="appendValue('*')"
+        />
+      </div>
+
+      <div>
+        <input
+          type="button"
+          class="button"
+          value="0"
+          onclick="appendValue(0)"
+        />
+        <input
+          type="button"
+          class="button"
+          value="."
+          onclick="appendValue('.')"
+        />
+        <input type="button" class="button" value="=" onclick="calculate()" />
+        <input
+          type="button"
+          class="button"
+          value="/"
+          onclick="appendValue('/')"
+        />
+      </div>
+
+      <div>
+        <input
+          type="button"
+          class="button"
+          value="Apagar Tudo"
+          onclick="clearAll()"
+        />
+        <input
+          type="button"
+          class="button"
+          value="Apagar Último"
+          onclick="deleteLast()"
+        />
+      </div>
     </div>
-    <div class="calculadora">
-        <div class="input" id="input"></div>
-        <div class="botoes">
-            <div class="operacao">
-                <div>+</div>
-                <div>-</div>
-                <div>&times;</div>
-                <div>&divide;</div>
-            </div>
-            <div class="PainelEsquerda">
-                <div class="Numeros">
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-                <div class="Numeros">
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                </div>
-                <div class="Numeros">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-                <div class="Numeros">
-                    <div>0</div>
-                    <div>.</div>
-                    <div id="Limpar">C</div>
-                </div>
-            </div>
-            <div class="igual" id="resultado">=</div>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/Taunt-byte">Lucas Neves</a> em 2020
+      </p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
